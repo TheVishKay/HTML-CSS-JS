@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vid8 Forms and Input labels</title>
+</head>
+
+<body>
+    <h1> A simple and easy to make form in HTML</h1>
+    <form action="store.db">
+        <div>
+            Name: <br><input placeholder="Enter your name" type="text" name="Name" id="" required>
+        </div>
+        <div>
+            <label for="Educ from">Graduated from :</label>
+            <br> <input type="text" name="GradPlace" id="Educ from">
+        </div>
+        <div>
+            <label for="CS">Current Salary :</label>
+            <br> <input type="number" name="CurrSal" id="CS">
+        </div>
+        <div>
+            <label for="Birth">Birthdate: </label>
+            <br><input type="date" name="Birthdate" id="Birth">
+        </div>
+        <div>
+            <label for="WE">Work Experience (in years): </label>
+            <br><input type="number" name="WorkExp" id="WE">
+        </div>
+        <div>
+            <label for="About">Write a few lines about your personality and goals </label>
+            <br> <textarea name="About" id="About" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="Willtowork">Would you be willing to work towards your goals? </label>
+            <input type="checkbox" name="WTW" id="Willtowork">
+        </div>
+        <div>
+            <label for="Surity">Are you sure you are willing to work? </label>
+            <br> Yes <input type="radio" name="Surity" id="Surity">
+            No <input type="radio" name="Surity" id="Surity" checked>
+        </div>
+        <div>
+            <label for="OP"> What's your priority?</label>
+            <select name="OP" id="OP">
+                <option value="Societal happiness">Societal happiness</option>
+                <option value="Fame">Fame</option>
+                <option value="Family">Family</option>
+                <option value="A and Money">A and Money</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+    <p>We can use placeholder to give text which will be pre present</p>
+    <p>We can use input text to get the text from the form</p>
+    <p>We can use input checkbox for checkboxes</p>
+    <p>We can use input date for date selector</p>
+    <p>Radio for choice but only selecting one option from the given</p>
+    <p>Select and then option to select from dropdown</p>
+    <p>input submit to submit (Value to give the name which will be shown)</p>
+    <p>label FOR section is the tag, after that is the displayed text for the option</p>
+    <p>ID is used when you want to use label</p>
+    <p>name attribute defines in which correspoding column it will go</p>
+    <p>form action="Here you give the file to which the data will go "</p>
+    <p>Required attribute if something is mandatory</p>
+
+
+</body>
+
+</html>
