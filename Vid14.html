@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Internal and External CSS</title>
+    <link rel="stylesheet" href="Vid14.css">
+    <style>
+        p {
+            background-color: aqua;
+            text-decoration-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Inline, Internal and External CSS</h2>
+    <p> The way of defining a style is by (selector) p{(property) : (value)}</p>
+    <p style="background-color: cornflowerblue; border: 2mm solid rgb(240, 77, 123) "> This paragraph uses Inline CSS for styling</p>
+    <p> This paragraph accesses the internal styling which was implemented above</p>
+    <div> This division accesses the styles from the css file</div>
+    <p> The priority order is as follows: Inline is given the higest prio then internal and external are given priority according to their order.</p>
+    <div> The last is given the highest priority. Also if you want something not last to be gien prio then use important keyword in the attribute thing</div>
+</body>
+
+</html>
