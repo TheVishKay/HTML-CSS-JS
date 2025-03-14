@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model , Margin and Padding</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .boxes {
+            background-color: rgb(156, 175, 160);
+            border: 3px solid rgb(27, 49, 26);
+            border-radius: 5px;
+            margin: 10px 20px 30px 40px;
+            /* margin: top right bottom left; */
+            /* padding: top right bottom left; */
+            padding: 10px 10px;
+            /* padding: topbottom leftright; */
+
+        }
+
+        #box1 {
+            box-sizing: border-box;
+            padding: 30px 30px;
+        }
+
+        #boxie {
+            background-color: rgb(199, 177, 136);
+            border: 5px solid rgb(68, 24, 11);
+            font-weight: Bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="background-color: aquamarine;">Box Model, Margin and Padding</h1>
+     <p id="box1" class="boxes">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ipsam delectus facilis
+        similique consectetur maiores eligendi et optio, suscipit vel <strong style="font-weight: bold;">PARA
+            ONE</strong> deserunt vitae illo est dolores culpa distinctio, corrupti sunt quisquam deleniti ab impedit?
+        Vitae, quos. Nulla quibusdam dolorum, debitis sint in ipsa magni nemo hic iure soluta sit veritatis culpa, sunt
+        illum! Excepturi, rerum praesentium neque ipsa libero aut alias quo asperiores necessitatibus omnis odit aliquam
+        iusto illo!</p>
+    <p class="boxes">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ipsam delectus facilis similique
+        consectetur maiores eligendi et optio, suscipit vel deserunt vitae illo est dolores culpa distinctio, corrupti
+        sunt quisquam deleniti ab impedit? Vitae, quos. Nulla quibusdam dolorum, debitis sint in ipsa magni nemo hic
+        iure soluta sit veritatis culpa, sunt illum! Excepturi, rerum praesentium neque ipsa libero aut alias quo
+        asperiores necessitatibus omnis odit aliquam iusto illo!</p>
+    <p id="boxie" class="boxes">Layering goes by this manner. The content is the innermost, then comes the padding, then
+        comes the border and then comes the margin. Each of border, padding and margin can be defined for each
+        individual side very easily.</p>
+</body>
+
+</html>
