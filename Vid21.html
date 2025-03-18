@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment using Clear and Float</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui;
+            font-size: medium;
+        }
+
+        .Box {
+            border: 5px solid black;
+            background-color: rgb(238, 228, 249);
+        }
+
+        .Edible {
+            border: 3px solid purple;
+            margin: 30px 5px;
+            padding: 20px 5px;
+            background-color: rgb(245, 232, 245);
+        }
+
+        #B1 {
+            float: left;
+            width: 48%;
+        }
+
+        #B2 {
+            float: left;
+            width: 48%;
+        }
+
+        #B3 {
+            clear: both;
+            width: 100%;
+            /* float: left; */
+        }
+
+        .p,
+        h1 {
+            text-align: left;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Alignment using Clear and Float</h1>
+    <div class="Box">
+        <div id="B1" class="Edible">
+            <h3>B1</h3>
+            <p class="ps">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolore ratione officia
+                deleniti reiciendis. Incidunt, corrupti! Aspernatur ut reprehenderit porro deleniti dolorum. Placeat,
+                facere
+                explicabo cupiditate cum fuga tempore esse eligendi. Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Eos repellendus ut labore iure nemo. Laborum dignissimos nostrum voluptate vel consequatur quod
+                culpa? Rem ex dolor a consequuntur tempore, itaque hic! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Nisi commodi quam rerum dicta quo quia amet excepturi debitis, laborum eaque maxime
+                quasi soluta dignissimos saepe vitae optio accusamus natus molestias.</p>
+        </div>
+        <div id="B2" class="Edible">
+            <h3>B2</h3>
+            <p class="ps">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolore ratione officia
+                deleniti reiciendis. Incidunt, corrupti! Aspernatur ut reprehenderit porro deleniti dolorum. Placeat,
+                facere
+                explicabo cupiditate cum fuga tempore esse Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Fugit magnam mollitia aspernatur et numquam molestiae ullam hic alias eos nihil, libero dolores dolor?
+                Odio, modi. Laudantium cupiditate pariatur magni vero. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Deleniti atque architecto reprehenderit excepturi quasi, veniam in corrupti sequi
+                dolor repellat, enim voluptatibus esse incidunt perspiciatis repudiandae cupiditate molestias quisquam
+                placeat.</p>
+        </div>
+        <div id="B3" class="Edible">
+            <H3>B3</H3>
+            <p class="ps">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolore ratione officia
+                deleniti reiciendis. Incidunt, corrupti! Aspernatur ut reprehenderit porro deleniti dolorum. Placeat,
+                facere
+                explicabo cupiditate cum fuga tempore esse eligendi.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

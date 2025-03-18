@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors and Buttons</title>
+    <style>
+        .box {
+            background-color: rgb(212, 200, 212);
+            border: 3px solid purple;
+            width: 700px;
+            margin: auto;
+            padding: 20px;
+        }
+        .but{
+            text-decoration: none;
+            border: none;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+
+        }
+        .but:hover{ 
+                   background-color: brown;
+        }
+        .but:visited{
+            background-color: red;
+        }
+        .but:active{
+            background-color: blueviolet;
+        }
+        .btn{
+        color: black;}
+    </style>
+</head>
+
+<body>
+    <h1>Pseudo Selectors and Buttons</h1>
+    <div class="box" id="box1">
+        <h3>Box heading</h3>
+        <p>For actually doing really high end button handling and other stuff you can go to <a class="btn" href="https://getbootstrap.com"> Bootstrap's website.</a></p>
+        <a class="but" href="https://youtube.con/" target="_blank"> Continue further.  </a>
+        <br><button class="but">Review us.</button>
+    </div>
+
+</body>
+
+</html>
