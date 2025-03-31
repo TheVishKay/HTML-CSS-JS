@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Navigation menu</title>
+    <style>
+        ul{ border-radius: 19px;
+            background-color: rgb(51, 16, 85);
+        }
+    li{ float:left ;
+        box-sizing: auto;
+        text-decoration: none;
+        margin: 10px 10px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    .Nav li{ pad: 5px 5px;
+        float: left;
+        margin: 10px 25px;
+    }
+    .Nav ul{ list-style: none;
+        overflow: auto;
+    }
+    .Sbox{ padding: 4px 4px;
+        float:right;
+        margin: 6px 25px;
+        border-radius: 7px;
+        margin-right: 40px;
+    }
+    </style>
 </head>
 <body>
+    <header><nav class="Nav"><ul>
+     <li><a href="#">Info</a></li>
+    <li><a href="#">Services offered</a></li>
+    <li><a href="#"> Past achievements</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <div><input type="text" class="Sbox" name="Searchbox" placeholder="Search Here"></div></ul></nav></header>
     
 </body>
 </html>
