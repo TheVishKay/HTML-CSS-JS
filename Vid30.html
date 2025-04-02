@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+
+        .Box{ display: none;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 2px; border: 2px solid black;
+            background-color: aqua;
+        }
+        @media(max-width:310px)
+        {
+            #b-1{ display: block;
+                background-color: pink;
+            }
+        }
+        @media(max-width:500px) and (min-width:310px)
+        {
+            #b-2{ display: block;
+                background-color: rgb(27, 11, 76);
+                color: antiquewhite;
+            }
+        }
+        @media(max-width:800px)and (min-width:500px)
+        {
+            #b-3{ display: block;
+                background-color: rgb(55, 185, 79);
+            }
+        }
+        @media(min-width:800px)
+        {
+            #b-4{ display: block;
+                background-color: rgb(204, 14, 201);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="Box" id="b-1">Media queries are used to define how text or elements will appear on a device of a certain width. This is how it would appear on a small device</div>
+    <div class="Box" id="b-2">Now if the width increases, this is how it would appear on a mid sized device like a tab</div>
+    <div class="Box" id="b-3">Further increments make the device seem like a desktop, and so the text will adapt</div>
+    <div class="Box" id="b-4">Even further increments, and Voila this text would be as if displayed on Wide screen device</div>
+    
+</body>
+</html>

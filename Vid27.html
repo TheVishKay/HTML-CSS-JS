@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z index and visibilility</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            width: 50px;
+            height: 50px; 
+        }
+
+        #b1 {
+            background-color: blue;
+            position: relative;
+            top: 20px; z-index: 91;
+        }
+
+        #b2 {
+            background-color: rgb(227, 146, 7);
+            position: relative;
+            margin-top: 10px;
+            z-index: 10;
+        }
+
+        #b3 {
+            background-color: rgb(156, 159, 144);
+            position: relative;
+            width: 300px;
+            /* visibility: hidden; */
+        }
+
+        #b4 {
+            background-color: rgb(138, 125, 130);
+            position: relative;
+            width: 300px;
+            /* display: none; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>We will discuss about z index and visibility</h1>
+    <div class="box" id="b1">Higher z index will come on top</div>
+    <div class="box" id="b2"></div>
+    <div class="box" id="b3">Will Hide element but not shift space</div>
+    <div class="box" id="b4">Will hide element and eliminate blank space</div>
+</body>
+
+</html>
